@@ -18,7 +18,7 @@ int main()
 			cin >> a[i][j];
 		}
 	}
-	cout << "Enter Second Array" << endl;
+	cout << "Enter Second Matrix" << endl;
 	for (i = 0; i < row; i++)
 	{
 		for (j = 0; j < col; j++)

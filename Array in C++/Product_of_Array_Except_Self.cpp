@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    vector<int> nums = {1, 2, 3, 4};
+    vector<int> nums = {1, 8, 3, 4};
     int n = nums.size();
     vector<int> output(n);
     // left to right iteration

@@ -3,13 +3,22 @@ using namespace std;
 
 int main()
 {
-    int rows, col;
-    cout << "Enter the No. of Rows and Columns in Matrix" << endl;
-    cin >> rows >> col;
+    int row = -1, col = 0;
+    while (row != col)
+    {
+        cout << "Enter the No of Rows :";
+        cin >> row;
+        cout << "Enter the No. of Columns :";
+        cin >> col;
+        if (row != col)
+        {
+            cout << "Warning! No. of Rows and Colums is not Same, Please Change it.\n";
+        }
+    }
 
-    int arr[rows][col];
+    int arr[row][col];
     cout << "Enter the Matrix" << endl;
-    for (int i = 0; i < rows; i++)
+    for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < col; j++)
         {
@@ -18,7 +27,7 @@ int main()
     }
 
     cout << "Entered Matrix is :" << endl;
-    for (int i = 0; i < rows; i++)
+    for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < col; j++)
         {
@@ -34,7 +43,7 @@ int main()
     bool flag = false;
     int x = -1, y = -1; // Variables to store position of the target
 
-    for (int i = 0; i < rows; i++)
+    for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < col; j++)
         {

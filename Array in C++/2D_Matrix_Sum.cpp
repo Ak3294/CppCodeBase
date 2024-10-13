@@ -4,11 +4,20 @@
 using namespace std;
 int main()
 {
-	int row, col;
-	cout << "Enter the No of Rows :";
-	cin >> row;
-	cout << "Enter the No. of Columns :";
-	cin >> col;
+	int row=-1, col=0;
+
+	while (row != col)
+	{
+		cout << "Enter the No of Rows :";
+		cin >> row;
+		cout << "Enter the No. of Columns :";
+		cin >> col;
+		if (row != col)
+		{
+			cout << "Warning! No. of Rows and Colums is not Same, Please Change it.\n";
+		}
+	}
+
 	int a[row][col], b[row][col], c[row][col], i, j;
 	cout << "Enter First Matrix" << endl;
 	for (i = 0; i < row; i++)
